@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Yabbu 2.0 Promo</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/form.css">
+  <meta name="theme-color" content="#ffaf3c">
+  <link rel="apple-touch-icon" sizes="152x152" href="img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="manifest" href="img/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="header">
+  </div>
+
+  <center class="page">
+    <div id="logo"><img src="img/yabbu-logo-w.svg" alt="Logo Yabbu"><!-- <img src="img/yabbu_logo.png"> --></div>
+    <div class="title">Besluitvaardig vergaderen!</div>
+
+    <div class="sheet">
+      <div class="content">
+        <h1 class="background double"><span>Gratis Premium Versie</span></h1>
+      </div>
+
+      <ul>
+        <li><i class="far fa-clock"></i><br><p class="ups">Bespaar 30-50% op uw vergadertijd.</p></li>
+        <li><i class="fas fa-tasks"></i><br><p class="ups">Verdubbel de besluitvormingssnelheid.</p></li>
+        <li><i class="fas fa-check-double"></i><br><p class="ups">Creëer eigenaarschap voor genomen besluiten.</p></li>
+      </ul>
+      <div class="label">
+        <span class="promo">PROMO</span>
+      </div>
+
+      <div class="form-wrapper">
+        <form id="promoForm">
+          <div class="form-group promo-code">
+            <span class="error-message">Ongeldige promotiecode</span>
+            <input class="form-input" id="promoCode" type="text" name="" value="" placeholder="Promotiecode" oninput="yabbu.formInputChange('promo-code')">
+          </div>
+          <div class="form-group first-name">
+            <span class="error-message">Vul uw voornaam in a.u.b.</span>
+            <input class="form-input" id="firstname" type="text" name="" value=""  placeholder="Voornaam" oninput="yabbu.formInputChange('first-name')" data-hj-suppress>
+          </div>
+          <div class="form-group last-name">
+            <span class="error-message">Vul uw achternaam in a.u.b.</span>
+            <input class="form-input" id="lastname" type="text" name="" value="" placeholder="Achternaam" oninput="yabbu.formInputChange('last-name')" data-hj-suppress>
+          </div>
+          <div class="form-group email">
+            <span class="error-message">Ongeldig e-mailadres</span>
+            <input class="form-input" id="email" type="text" name="" value="" placeholder="E-mailadres" oninput="yabbu.formInputChange('email')" data-hj-suppress>
+          </div>
+
+          <div class="form-group g-checkbox">
+            <input class="form-input" id="newsletterCheckbox" type="checkbox" value="" >
+            <label for="newsletterCheckbox" onclick="_gaq.push(['_trackEvent', 'Form' , 'newsletter', 'clicked'])" ><span class="box"></span><span class="label-txt">Meld u aan voor onze updates. We zullen u nooit spammen.</span></label>
+          </div>
+
+          <div class="form-group submit-wrapper">
+            <span>Verstuur</span>
+            <input type="submit" name="" value="Verstuur" onclick="_gaq.push(['_trackEvent', 'Form' , 'Submit', 'clicked'])">
+          </div>
+
+        </form>
+        <div id="successMessage">
+          <h3>Dank u voor uw aanmelding!</h3>
+          <p>Wij nemen voor 17 september contact met u op.</p>
+        </div>
+        <div class="" id="formErrorGeneral" >
+
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div class="sheet">
+      <div class="content">
+        <h2>Wat houdt deze promotie in?</h2>
+        <p class="pro-style">1 jaar gratis Premium Versie Yabbu 2.0</p>
+        <p class="pro-style">Onbeperkt gebruik voor 50 gebruikers t.w.v. €1.799</p>
+        <p class="pro-style">1 uur Workshop Effectief Vergaderen* t.w.v. €279</p>
+        <p class="pro-style">Periode: van 28 september 2018 t/m 27 september 2019</p>
+        <p class="p-sp">*Op locatie in Amsterdam of op locatie bij bedrijven met 100+ medewerkers. Anders online.</p>
+      </div>
+
+    </div>
+
+    <div class="sheet">
+      <div class="faq-wrapper content">
+        <h2>FAQ:</h2>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="0" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 0', 'clicked'])">Wat is Yabbu?</h3>
+          <p class="faq-txt" >Yabbu is een tool om meetings effectiever en korter te maken.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="1" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 1', 'clicked'])" >Wat is Yabbu 2.0?</h3>
+          <p class="faq-txt" >Yabbu 2.0 is de nieuwe versie van Yabbu met verbeterde interface.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="2"onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 2', 'clicked'])"  >Waarom deze aanbieding?</h3>
+          <p class="faq-txt" >Om onze investeerders te bedanken.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="3" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 3', 'clicked'])" >Wanneer nemen jullie contact op?</h3>
+          <p class="faq-txt" >Wij benaderen u voor maandag 17 september.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="4" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 4', 'clicked'])" >Kan ik ook eerder of later starten?</h3>
+          <p class="faq-txt" >Later wel. Laat het ons weten zodra we contact opnemen.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="5"onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 5', 'clicked'])"  >Zijn er kosten aan verbonden?</h3>
+          <p class="faq-txt" >Nee, het eerste jaar is gratis.<br> We nemen september 2019 contact op om te vragen of u Yabbu wil blijven gebruiken.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="6" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 6', 'clicked'])" >Wat betekent de Premium Versie?</h3>
+          <p class="faq-txt" >Dat u beschikt over alle features en maximale support.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="7" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 7', 'clicked'])" >Wat kan ik van de workshop verwachten?</h3>
+          <p class="faq-txt" >De workshop legt uit hoe je vergaderen kort en leuk kan maken.<br> Uiteraard maken we ook een bruggetje naar Yabbu.</p>
+        </div>
+        <div class="faq-item" >
+          <h3 class="pro-style faq-headline" data-faq="8" onclick="_gaq.push(['_trackEvent', 'FAQ' , 'faq 8', 'clicked'])" >Wat als ik de voucher niet wil gebruiken?</h3>
+          <p class="faq-txt" >Stuur de e-mail met code door naar iemand van wie u denkt dat die er blij mee is.</p>
+        </div>
+      </div>
+
+      </div>
+
+    </div>
+
+<footer>
+  <section>
+    <a href="https://www.facebook.com/yabbu/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social' , 'facebook', 'clicked'])" ><p class="social"><i class="fab fa-facebook-f"></i> <span>Facebook</span></p></a>
+    <a href="https://twitter.com/getyabbu" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social' , 'twitter', 'clicked'])"><p class="social"><i class="fab fa-twitter"></i><span>Twitter</span></p></a>
+    <a href="https://www.linkedin.com/company/yabbu/" target="_blank" onclick="_gaq.push(['_trackEvent', 'Social' , 'linkedin', 'clicked'])"><p class="social"><i class="fab fa-linkedin-in"></i><span>Linkedin</span></p></a>
+  </section>
+</footer>
+
+
+
+</center>
+
+<script src="js/form.js"></script>
+
+<!-- Hotjar Tracking Code for yabbu.com -->
+<script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:956277,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+</script>
+
+
+<!-- Google analytisc events -->
+<script>
+// if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+  //ga events
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-36823626-7', 'auto');
+  ga('send', 'pageview');
+
+  //ga analytics
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36823626-7']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+// }
+</script>
+
+
+
+</body>
+
+</html>

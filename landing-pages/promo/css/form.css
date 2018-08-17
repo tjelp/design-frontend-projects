@@ -1,0 +1,289 @@
+
+.form-wrapper{
+  width: 100%;
+  position: relative;
+  margin: 15px auto;
+  overflow: hidden;
+  max-width: 550px;
+  padding: 5px;
+}
+#promoForm.sending{
+  opacity: 0.5;
+}
+#promoForm.hide{
+  opacity: 0;
+}
+
+#promoForm .form-group .error-message{
+  opacity: 0;
+  z-index: -10;
+  position:  absolute;
+  color: red;
+  font-weight: 400;
+  font-size: 14px;
+  top: -22px;
+  left: -50px;
+  transition: ease all 0.3s
+}
+#promoForm .form-group.first-name.error .error-message,
+#promoForm .form-group.last-name.error .error-message{
+  left: 17px;
+  text-align: left;
+}
+@media only screen and (max-width: 550px) {
+  #promoForm .form-group.first-name.error .error-message,
+  #promoForm .form-group.last-name.error .error-message{
+    left: 30px;
+    width: 100%;
+  }
+}
+#promoForm .form-group.error .error-message{
+  opacity: 1;
+  z-index: 10;
+  left: 30px;
+}
+#formErrorGeneral{
+  display: none;
+}
+#successMessage{
+  position: absolute;
+  top: 45%;
+  left: 0px;
+  right: 0px;
+  margin: 0 auto;
+  transition: ease all 0.3s;
+  transform: translate(0,-50%);
+  opacity: 0;
+  z-index: -10;
+}
+
+#successMessage.show {
+  z-index: 10;
+  top: 50%;
+  opacity: 1;
+}
+
+#promoForm {
+  position: relative;
+  margin: 0 auto;
+  text-align: center;
+}
+#promoForm .form-group{
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 18px auto;
+  display: inline-block;
+  text-align: content: '';
+}
+
+#promoForm .form-group.g-checkbox {
+  cursor: pointer;
+  text-align: left;
+  height: auto;
+  position: relative;
+  width: 90%;
+  margin: -5px auto 10px;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+#promoForm .form-group input{
+  font-size: 16px;
+  height: 100%;
+  width: calc(90% - 20px);
+  position: relative;
+  padding-left: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgba(48,0,123,0.2);
+  border: none;
+  margin: 0 auto;
+}
+
+#promoForm .form-group input#newsletterCheckbox{
+  width: 0px;
+  height: 0px;
+  z-index: -10;
+  opacity: 0;
+}
+#promoForm .form-group .box{
+  height: 25px;
+  width: 25px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  background: white;
+  box-shadow: 0 0 8px 0 rgba(48,0,123,0.2);
+  border: 1px solid rgba(48,0,123,0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: ease all 0.3s;
+}
+#promoForm .form-group input#newsletterCheckbox:checked + label .box{
+  background: #118B16;
+}
+
+
+#promoForm .form-group.g-checkbox label{
+  cursor: pointer;
+  display: block;
+  vertical-align: middle;
+}
+#promoForm .form-group.g-checkbox .label-txt{
+  cursor: pointer;
+  display: inline;
+  vertical-align: middle;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 550px) {
+  #promoForm .form-group.g-checkbox .label-txt{
+    font-size: 12px;
+    display: inline-block;
+    max-width: 70%;
+  }
+
+}
+
+#promoForm .form-group.submit-wrapper {
+  width: 90%;
+  position: relative;
+  cursor: pointer;
+  background: #440044;
+  color: white;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px 0 rgba(48,0,123,0.2);
+  transition: ease all 0.3s;
+  overflow: hidden;
+}
+#promoForm .form-group.submit-wrapper input{
+  width: 100%;
+  padding-left: 0px;
+  background: transparent;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+}
+#promoForm.sending .form-group.submit-wrapper input{
+  pointer-events: none;
+}
+#promoForm.sending .form-group.submit-wrapper{
+  cursor: default;
+}
+
+#promoForm .form-group.submit-wrapper:after{
+  background: #ffaf3c;
+  width: 0%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: -10%;
+  left: inherit;
+  transition: ease all 0.35s;
+  transform: skewX(-20deg);
+}
+#promoForm.sending .form-group.submit-wrapper:after{
+  display: none;
+}
+#promoForm .form-group.submit-wrapper:hover:after{
+  width: 115%;
+  left: -10%;
+  right: inherit;
+}
+#promoForm .form-group.submit-wrapper span{
+  transition: ease all 0.3s;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translate(0,-50%);
+  left: 0px;
+  right: 0px;
+}
+
+span.label-txt {
+    font-size: 14px;
+}
+
+#promoForm .form-group.first-name,
+#promoForm .form-group.last-name {
+  width: 47%;
+  display: inline-block;
+  vertical-align: top;
+}
+@media only screen and (max-width: 550px) {
+  #promoForm .form-group.first-name,
+  #promoForm .form-group.last-name {
+    width: 100%;
+  }
+}
+
+#promoForm .form-group.first-name{
+
+}
+#promoForm .form-group.promo-code input{
+  height: 55px;
+  font-size: 18px;
+  font-weight: 600;
+  box-shadow: 0 0 8px 0 rgba(48,0,123,0.5);
+
+
+}
+
+#formErrorGeneral{
+  color: red;
+}
+
+.faq-txt{
+  opacity: 0;
+  z-index: -1;
+  transition: ease all 0.3s;
+  overflow: hidden;
+}
+.faq-txt.show{
+  padding: 10px 0px;
+  z-index: 1;
+  opacity: 1;
+}
+.faq-headline{
+  position: relative;
+  background: #f8f8ff;
+  cursor: pointer;
+  border-radius: 8px;
+  margin: 3px auto;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: ease all 0.3s;
+}
+
+@media only screen and (max-width: 550px) {
+  .faq-headline{
+    font-size: 16px;
+  }
+
+}
+
+.faq-headline:after{
+  content: '';
+  position: absolute;
+  top: 35%;
+  right: -5px;
+  transition: ease all 0.3s;
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    opacity: 0;
+}
+
+.faq-headline.show:after,
+.faq-headline:hover:after{
+  right: 10px;
+  opacity: 1;
+}
